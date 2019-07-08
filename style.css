@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.wrapper{
+    width: 90%;
+    height: 100vh;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+}
+.header{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+.header__title{
+    grid-row: 1;
+}
+.header__p{
+    grid-row: 2;
+}
+.form{
+    width: 40%;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+.form__label{
+    display: block;
+    font: 500 italic 1.3rem "Times New Roman",serif;
+    color: #888;
+    padding: 5px;
+}
+.form__input{
+    display: block;
+    height: 30px;
+    padding-left: 5px;
+    font: bold 1rem Arial, sans-serif;
+}
+.form__select{
+    display: block;
+    width: 70%;
+    height: 30px;
+    font: bold 1rem Arial, sans-serif;
+}
+.form__submit{
+    grid-column: 2;
+    width: 60%;
+    height: 3vh;
+    margin-top: 10px;
+    cursor: pointer;
+    justify-self: end;   
+}
+.form__submit > input{
+    width: 45%;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.table, th, td {
+    border: 1px solid black;
+}
+th{
+    text-transform: uppercase;
+}
+.infoDay{
+    margin: 20px 0 0 0;
+    font: 600 1.3rem Arial;  
+    float: right;
+}

@@ -21,10 +21,23 @@ form.addEventListener('submit', (e) => {
 
 // ajax
 
-
+// get data from server
+var order = [];
+order.push({
+    index = 1,
+    username : data.username,
+    password : data.password,
+    email : data.email,
+    animal : data.animal,
+    created : data.created,
+    comment: data.comment,
+    delOrder: X
+})
 
 // added row
 function createRow(data) {
+
+    // create new row
     var tbody = document.querySelector('tbody');
     var row = document.createElement('tr');
 
@@ -41,6 +54,7 @@ function createRow(data) {
     comment.setAttribute('contenteditable','true');
 
     // filling with data
+    
 
     // insert td in row
     row.appendChild(index);
